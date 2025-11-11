@@ -1,0 +1,27 @@
+'use client';
+import { useState } from "react";
+
+import Image from "next/image";
+import Link from "next/link";
+import { LuSun, LuMoon } from "react-icons/lu";
+
+import estilos from "./Topo.module.css";
+
+export default function Topo(){
+// criando um state
+const [temaClaro, setTemaClaro] = useState(true);
+// criando uma função de mudança de tema
+function trocarTema(){
+    if(temaClaro === true){
+        setTemaClaro(false)
+    } else {
+        setTemaClaro(true)
+    }
+}
+
+    return(
+        <hedader>
+            <button onClick={trocarTema}>{temaClaro ? < LuSun /> : <LuMoon />}</button>
+        </hedader>
+    );
+};
