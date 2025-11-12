@@ -1,0 +1,31 @@
+.containerFooter {
+    width: 100%;
+    padding: 50px 0px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.containerImgTexto {
+    max-width: 600px;
+    text-align: center;
+    color:#8a8fa3;
+}
+
+.imgLogo{
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+}
+
+.containerIcones {
+    max-width: 375px;
+    font-size: 32px;
+}
+
+.construido {
+    border-top: solid 1px #feb633;
+}

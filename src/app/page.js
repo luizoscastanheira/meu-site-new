@@ -1,11 +1,13 @@
 'use client'
 import { useState } from "react";
+import Link from "next/link";
 
 import estilos from "./page.module.css";
 
 import Topo from "@/componentes/Topo";
 import SecaoBanner from "@/componentes/SecaoBanner";
 import SecaoExperienciaDeTrabalho from "@/componentes/SecaoExperienciaTrabalho";
+import Rodape from "@/componentes/Rodape";
 
 export default function Home() {
 
@@ -26,7 +28,11 @@ function trocarTema(){
       
       <SecaoBanner />
       
+      <Link className={estilos.linkVoltar} href="#topo" title="Clique para voltar ao topo.">Voltar</Link>
+
       <SecaoExperienciaDeTrabalho tema={temaDark} />
+
+      <Rodape tema={temaDark}/>
       
     </div>
   );

@@ -13,13 +13,14 @@ export default function Topo({tema, funcao}){
 
 
     return(
-        <header className={`${estilos.containerTopo} ${tema ? 'darkMode' : ''} `}>
+        <header id="topo" className={`${estilos.containerTopo} ${tema ? 'darkMode' : ''} `}>
 
             <Image className={estilos.imgTopo} src={Globo} alt="imagem de um globo" />
             <nav className={estilos.navTopo}>
-                <Link href="#sectionExperiencia">Experiencia</Link>
+                <Link className={estilos.navLink} href="#sectionExperiencia">Experiencia</Link>
+                <Link className={estilos.navLink}  href="#rodape">Contato</Link>
             </nav>
-            <button className={estilos.botaoTopo} onClick={funcao}>{tema ? < LuSun className={estilos.iconeTopo} /> : <LuMoon className={estilos.iconeTopo} />}</button>
+            <button className={estilos.botaoTopo} onClick={funcao} title="Alternar Tema Claro / Tema Escuro.">{tema ? < LuSun className={estilos.iconeTopo} /> : <LuMoon className={estilos.iconeTopo} />}</button>
 
         </header>
     );
