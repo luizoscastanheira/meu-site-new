@@ -22,7 +22,11 @@ export default function Rodape({tema}){
             <h4>Entre em contato clicando em um link abaixo:</h4>
 
             <div className={estilos.containerIcones}>
-                <FaLinkedin/> <FaWhatsappSquare/> <FaPhoneSquareAlt/> <FaMailBulk/>
+                
+                <Link href="https://www.linkedin.com/in/luiz-ot%C3%A1vio-da-silva-castanheira-19683696/" target="_blank" title="Meu LinkedIn!"><FaLinkedin/></Link>
+                <Link href="https://wa.me/5524981839564" target="_blank" title="Meu WhatsApp!"><FaWhatsappSquare/></Link>
+                <Link href="tel:24981839564" target="_blank" title="Meu Telefone!"><FaPhoneSquareAlt/></Link>
+                <Link href="mailto:luizoscastanheira@gmail.com" target="_blank" title="Meu E-mail!"><FaMailBulk/></Link>
             </div>
 
             <p className={estilos.contruido}>Contruído por mim em React</p>

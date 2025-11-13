@@ -5,7 +5,7 @@ export default function SecaoBanner(){
         <section className={estilos.containerSection}>
             <div className={estilos.boxImagem}></div>
             <div className={estilos.boxTexto}>
-                <p>Design / UI / UX / Tecnologia</p>
+                <p>Design / Tecnologia</p>
                 <h2>Fornecedor de Tecnologia</h2>
                 <span>e Desenvolvimento Web</span>
             </div>

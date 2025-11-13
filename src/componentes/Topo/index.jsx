@@ -17,7 +17,7 @@ export default function Topo({tema, funcao}){
 
             <Image className={estilos.imgTopo} src={Globo} alt="imagem de um globo" />
             <nav className={estilos.navTopo}>
-                <Link className={estilos.navLink} href="#sectionExperiencia">Experiencia</Link>
+                <Link className={estilos.navLink} href="#sectionExperiencia">Experiência</Link>
                 <Link className={estilos.navLink}  href="#rodape">Contato</Link>
             </nav>
             <button className={estilos.botaoTopo} onClick={funcao} title="Alternar Tema Claro / Tema Escuro.">{tema ? < LuSun className={estilos.iconeTopo} /> : <LuMoon className={estilos.iconeTopo} />}</button>
