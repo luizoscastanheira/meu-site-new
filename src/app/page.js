@@ -6,6 +6,7 @@ import estilos from "./page.module.css";
 
 import Topo from "@/componentes/Topo";
 import SecaoBanner from "@/componentes/SecaoBanner";
+import SecaoSobre from "@/componentes/SecaoSobre";
 import SecaoExperienciaDeTrabalho from "@/componentes/SecaoExperienciaTrabalho";
 import Rodape from "@/componentes/Rodape";
 
@@ -27,6 +28,8 @@ function trocarTema(){
       <Topo tema={temaDark} funcao={trocarTema}/>
       
       <SecaoBanner />
+
+      <SecaoSobre />
       
       <Link className={estilos.linkVoltar} href="#topo" title="Clique para voltar ao topo.">Voltar</Link>
 
