@@ -34,3 +34,16 @@
 .icone {
     font-size: 100px;
 }
+
+.containerDescricoes{
+    border: solid 1px red;
+    max-width: 1024px;
+    
+
+}
+
+.linkAreas {
+    text-decoration: none;
+    color: #32333c;
+    
+}

@@ -1,5 +1,6 @@
 .containerCard {
     width: 300px;
+    height: 300px;
     box-shadow: 1px 1px 5px #CCCCCC;
 
     cursor: pointer;
@@ -8,6 +9,7 @@
     flex-direction: column;
     justify-content: space-around;
     gap: 20px;
+    
 
     &:hover {
         background-color: #feb633;

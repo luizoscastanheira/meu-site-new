@@ -19,7 +19,7 @@ export default function Topo({tema, funcao}){
             <nav className={estilos.navTopo}>
                 <Link className={estilos.navLink}  href="#Sobre">Sobre</Link>
                 <Link className={estilos.navLink}  href="#">Projetos</Link>
-                <Link className={estilos.navLink}  href="#sectionExperiencia">Experiência</Link>
+                <Link className={estilos.navLink}  href="#sectionAreasDeAtuacao">Áreas de Atuação</Link>
                 <Link className={estilos.navLink}  href="#">Formação</Link>
                 <Link className={estilos.navLink}  href="#rodape">Contato</Link>
             </nav>

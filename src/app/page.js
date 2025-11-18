@@ -7,12 +7,12 @@ import estilos from "./page.module.css";
 import Topo from "@/componentes/Topo";
 import SecaoBanner from "@/componentes/SecaoBanner";
 import SecaoSobre from "@/componentes/SecaoSobre";
-import SecaoExperienciaDeTrabalho from "@/componentes/SecaoExperienciaTrabalho";
+import SecaoAreasDeAtuacao from "@/componentes/SecaoAreasDeAtuacao";
 import Rodape from "@/componentes/Rodape";
 
 export default function Home() {
 
-  // criando um state
+  // criando um state para tema
 const [temaDark, setTemaDark] = useState(false);
 // criando uma função de mudança de tema
 function trocarTema(){
@@ -20,11 +20,14 @@ function trocarTema(){
         setTemaDark(false)
     } else {
         setTemaDark(true)
-    }
-}
+    };
+};
+
+
 
   return (
     <div>
+      
       <Topo tema={temaDark} funcao={trocarTema}/>
       
       <SecaoBanner />
@@ -33,8 +36,8 @@ function trocarTema(){
       
       <Link className={estilos.linkVoltar} href="#topo" title="Clique para voltar ao topo.">Voltar</Link>
 
-      <SecaoExperienciaDeTrabalho tema={temaDark} />
-
+      <SecaoAreasDeAtuacao tema={temaDark} />
+      
       <Rodape tema={temaDark}/>
       
     </div>
