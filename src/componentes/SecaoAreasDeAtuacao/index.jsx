@@ -17,20 +17,33 @@ export default function SecaoAreasDeAtuacao({tema}){
 
 // criando um state para inserir um componente
 const [descricaoAtiva, setDescricaoAtiva] = useState(false);
+
+// Criando um state para escolher a descriçao que será buscada no componente CardDescricao
+const [escolherDescricao, setEscolherDescricao] = useState();
+
+// função para ativar o componente descrição
+const buscarDescricoes = descricoes.filter((desc) => desc.id == escolherDescricao)
+
 // criando uma funcao de insercao de descricao - o componente CardDescricao
-function inserirDescricao(){
-  if(descricaoAtiva === true) {
-      setDescricaoAtiva(false)
-  }else {
-    setDescricaoAtiva(true)
-  };
+function inserirDescricao(event, id){
+    event.preventDefault()
+    
+    setEscolherDescricao(id)
+
+    if(descricaoAtiva === true) {
+        setDescricaoAtiva(false)
+    }else {
+        setDescricaoAtiva(true)
+
+        setTimeout(
+        () => {
+            console.log('settimeout')
+            setDescricaoAtiva(false);
+        }, 60000
+    );
+    };
+
 };
-
-// função para ativar o compoentne descrição
-const buscarDescricoes = descricoes.filter((desc) => desc.id == 1)
-
-console.log(descricoes)
-console.log(buscarDescricoes)
 
     return(
         <section id="sectionAreasDeAtuacao" className={`${estilos.containerSection} ${tema ? 'darkMode': ''}`}>
@@ -40,15 +53,23 @@ console.log(buscarDescricoes)
             </div>
             <div className={estilos.containerCards}>
 
-                <Link id="1" href="#" className={estilos.linkAreas}><Card titulo={'Web Designer'} paragrafo={'Criação de Landing pages e sites institucionais completamente personalizados.'} icone={<FcGlobe className={estilos.icone}/>}/></Link>
-                <Link id="2" href="#" className={estilos.linkAreas}><Card titulo={'Suporte - Redes e Sistemas'} paragrafo={'Instalação e configuração de sistemas operacionais Windows/Linux/ChromeOS. Manutenção preventiva e corretiva.'} icone={<FcLinux className={estilos.icone}/>}/></Link>
-                <Link id="3" href="#" className={estilos.linkAreas}><Card titulo={'Treinamento'} paragrafo={'Treinamento personalizado na medida certa para sua empresa. O que sua equipe precisa?'} icone={<FcVoicePresentation className={estilos.icone}/>}/></Link>
+                <Link id="1" href="#" onClick={(e) => inserirDescricao(e, 1 )} className={estilos.linkAreas}><Card titulo={'Web Designer'} paragrafo={'Criação de Landing pages e sites institucionais completamente personalizados.'} icone={<FcGlobe className={estilos.icone}/>}/></Link>
+                <Link id="2" href="#" onClick={(e) => inserirDescricao(e, 2 )} className={estilos.linkAreas}><Card titulo={'Suporte - Redes e Sistemas'} paragrafo={'Instalação e configuração de sistemas operacionais Windows/Linux/ChromeOS. Manutenção preventiva e corretiva.'} icone={<FcLinux className={estilos.icone}/>}/></Link>
+                <Link id="3" href="#" onClick={(e) => inserirDescricao(e, 3 )} className={estilos.linkAreas}><Card titulo={'Treinamento'} paragrafo={'Treinamento personalizado na medida certa para sua empresa. O que sua equipe precisa?'} icone={<FcVoicePresentation className={estilos.icone}/>}/></Link>
       
             </div>
 
             <div className={estilos.containerDescricoes}>
 
-               {descricaoAtiva && <CardDescricao/>}
+               {descricaoAtiva && 
+               
+               buscarDescricoes.map( (desc) => (
+                <CardDescricao 
+                    key ={desc.id}
+                    area={desc.area}
+                    descricao = {desc.descricao}
+                />
+               ) )}
             
 
             </div>

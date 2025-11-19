@@ -1,8 +1,10 @@
 .containerArticle{
     width: 100%;
     height: auto;
-
-    border: solid 1px red;
-
+    padding: 30px;
+    
+     & p{
+        text-align: justify;
+     }
 
 }
