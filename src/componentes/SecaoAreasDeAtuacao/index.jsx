@@ -53,9 +53,9 @@ function inserirDescricao(event, id){
             </div>
             <div className={estilos.containerCards}>
 
-                <Link id="1" href="#" onClick={(e) => inserirDescricao(e, 1 )} className={estilos.linkAreas}><Card titulo={'Web Designer'} paragrafo={'Criação de Landing pages e sites institucionais completamente personalizados.'} icone={<FcGlobe className={estilos.icone}/>}/></Link>
-                <Link id="2" href="#" onClick={(e) => inserirDescricao(e, 2 )} className={estilos.linkAreas}><Card titulo={'Suporte - Redes e Sistemas'} paragrafo={'Instalação e configuração de sistemas operacionais Windows/Linux/ChromeOS. Manutenção preventiva e corretiva.'} icone={<FcLinux className={estilos.icone}/>}/></Link>
-                <Link id="3" href="#" onClick={(e) => inserirDescricao(e, 3 )} className={estilos.linkAreas}><Card titulo={'Treinamento'} paragrafo={'Treinamento personalizado na medida certa para sua empresa. O que sua equipe precisa?'} icone={<FcVoicePresentation className={estilos.icone}/>}/></Link>
+                <Link id="1" href="#" onClick={(e) => inserirDescricao(e, 1 )} className={estilos.linkAreas} title="Clique e saiba mais!" ><Card titulo={'Web Designer'} paragrafo={'Criação de Landing pages e sites institucionais completamente personalizados.'} icone={<FcGlobe className={estilos.icone}/>}/></Link>
+                <Link id="2" href="#" onClick={(e) => inserirDescricao(e, 2 )} className={estilos.linkAreas} title="Clique e saiba mais!" ><Card titulo={'Suporte - Redes e Sistemas'} paragrafo={'Instalação e configuração de sistemas operacionais Windows/Linux/ChromeOS. Manutenção preventiva e corretiva.'} icone={<FcLinux className={estilos.icone}/>}/></Link>
+                <Link id="3" href="#" onClick={(e) => inserirDescricao(e, 3 )} className={estilos.linkAreas} title="Clique e saiba mais!" ><Card titulo={'Treinamento'} paragrafo={'Treinamento personalizado na medida certa para sua empresa. O que sua equipe precisa?'} icone={<FcVoicePresentation className={estilos.icone}/>}/></Link>
       
             </div>
 
