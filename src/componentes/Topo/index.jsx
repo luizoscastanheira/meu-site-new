@@ -18,7 +18,7 @@ export default function Topo({tema, funcao}){
             <Image className={estilos.imgTopo} src={Globo} alt="imagem de um globo" />
             <nav className={estilos.navTopo}>
                 <Link className={estilos.navLink}  href="#Sobre">Sobre</Link>
-                <Link className={estilos.navLink}  href="#">Projetos</Link>
+                <Link className={estilos.navLink}  href="#secaoProjetos">Projetos</Link>
                 <Link className={estilos.navLink}  href="#sectionAreasDeAtuacao">Áreas de Atuação</Link>
                 <Link className={estilos.navLink}  href="#">Formação</Link>
                 <Link className={estilos.navLink}  href="#rodape">Contato</Link>

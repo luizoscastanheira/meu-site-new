@@ -1,0 +1,22 @@
+.containerSection {
+    width: 100%;
+    padding: 20px 10px;
+
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+
+    align-items: center;
+
+    & h2 {
+        border-bottom: 1px solid #feb633;
+        margin-top: 30px;
+    }
+}
+
+.containerCards{
+    display: flex;
+    flex-wrap: wrap;
+    gap:20px;
+    
+}

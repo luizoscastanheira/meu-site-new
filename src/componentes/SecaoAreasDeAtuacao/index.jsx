@@ -17,13 +17,10 @@ export default function SecaoAreasDeAtuacao({tema}){
 
 // criando um state para inserir um componente
 const [descricaoAtiva, setDescricaoAtiva] = useState(false);
-
 // Criando um state para escolher a descriçao que será buscada no componente CardDescricao
 const [escolherDescricao, setEscolherDescricao] = useState();
-
 // função para ativar o componente descrição
 const buscarDescricoes = descricoes.filter((desc) => desc.id == escolherDescricao)
-
 // criando uma funcao de insercao de descricao - o componente CardDescricao
 function inserirDescricao(event, id){
     event.preventDefault()
@@ -37,7 +34,6 @@ function inserirDescricao(event, id){
 
         setTimeout(
         () => {
-            console.log('settimeout')
             setDescricaoAtiva(false);
         }, 60000
     );

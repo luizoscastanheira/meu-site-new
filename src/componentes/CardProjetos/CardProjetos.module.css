@@ -1,0 +1,44 @@
+.containerCard {
+    width: 350px;
+    min-height: 450px;
+    box-shadow: 1px 1px 5px #CCCCCC;
+    border-radius: 0px;
+
+    cursor: pointer;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    
+    transition: border-redius 3s, background-color 2s;
+
+    &:hover {
+        background-color: #feb633;
+        border-radius: 15px;
+
+        & .linkExterno {
+            background-color: white;
+        }
+    }
+
+    & p{
+        text-align: center;
+        background-color: #CCCCCC;
+    }
+}
+
+.linkExterno {
+    text-decoration: none;
+    color: black;
+    background-color: #feb633;
+    padding: 5px 10px;
+    border-radius: 15px;
+
+    transition: color 1s, background-color 1s, border-radius, padding 2s;
+
+    &:hover {
+        padding: 5px 25px;
+    }
+}
