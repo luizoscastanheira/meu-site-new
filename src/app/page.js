@@ -9,6 +9,7 @@ import SecaoBanner from "@/componentes/SecaoBanner";
 import SecaoSobre from "@/componentes/SecaoSobre";
 import SecaoProjetos from "@/componentes/SecaoProjetos";
 import SecaoAreasDeAtuacao from "@/componentes/SecaoAreasDeAtuacao";
+import SecaoFormacao from "@/componentes/SecaoFormacao";
 import Rodape from "@/componentes/Rodape";
 
 export default function Home() {
@@ -40,6 +41,8 @@ function trocarTema(){
       <Link className={estilos.linkVoltar} href="#topo" title="Clique para voltar ao topo.">Voltar</Link>
 
       <SecaoAreasDeAtuacao tema={temaDark} />
+
+      <SecaoFormacao />
       
       <Rodape tema={temaDark}/>
       

@@ -7,6 +7,8 @@ export default function CardDescricao(props){
             <h3>{props.area}</h3>
             <hr></hr>
             <p>{props.descricao}</p>
+            <hr></hr>
+            <p>{props.experiencia}</p>
 
         </article>
     );

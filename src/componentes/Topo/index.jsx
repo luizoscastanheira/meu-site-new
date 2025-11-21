@@ -17,11 +17,11 @@ export default function Topo({tema, funcao}){
 
             <Image className={estilos.imgTopo} src={Globo} alt="imagem de um globo" />
             <nav className={estilos.navTopo}>
-                <Link className={estilos.navLink}  href="#Sobre">Sobre</Link>
+                <Link className={estilos.navLink}  href="#secaoSobre">Sobre</Link>
                 <Link className={estilos.navLink}  href="#secaoProjetos">Projetos</Link>
-                <Link className={estilos.navLink}  href="#sectionAreasDeAtuacao">Áreas de Atuação</Link>
-                <Link className={estilos.navLink}  href="#">Formação</Link>
-                <Link className={estilos.navLink}  href="#rodape">Contato</Link>
+                <Link className={estilos.navLink}  href="#secaoAreasDeAtuacao">Áreas de Atuação</Link>
+                <Link className={estilos.navLink}  href="#secaoFormacao">Formação</Link>
+                <Link className={estilos.navLink}  href="#secaoRodape">Contato</Link>
             </nav>
             <button className={estilos.botaoTopo} onClick={funcao} title="Alternar Tema Claro / Tema Escuro.">{tema ? < LuSun className={estilos.iconeTopo} /> : <LuMoon className={estilos.iconeTopo} />}</button>
 

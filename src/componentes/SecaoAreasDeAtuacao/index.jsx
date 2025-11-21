@@ -42,7 +42,7 @@ function inserirDescricao(event, id){
 };
 
     return(
-        <section id="sectionAreasDeAtuacao" className={`${estilos.containerSection} ${tema ? 'darkMode': ''}`}>
+        <section id="secaoAreasDeAtuacao" className={`${estilos.containerSection} ${tema ? 'darkMode': ''}`}>
             <div className={estilos.boxTexto}>
                 <h2>Áreas de Atuação</h2>
                 <p>Já são quase 30 anos no mercado de Tecnologia, sempre empenhado em fornecer o que o cliente precisa, focado em entregar resultados que impactem positivamente cada projeto.</p>
@@ -64,6 +64,7 @@ function inserirDescricao(event, id){
                     key ={desc.id}
                     area={desc.area}
                     descricao = {desc.descricao}
+                    experiencia={desc.experiencia}
                 />
                ) )}
             

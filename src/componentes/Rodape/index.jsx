@@ -10,7 +10,7 @@ import Logo from "../../../public/logoLoscBRSmall.png";
 
 export default function Rodape({tema}){
     return(
-        <footer id="rodape" className={`${estilos.containerFooter} ${tema ? `darkMode` : ''}`}>
+        <footer id="secaoRodape" className={`${estilos.containerFooter} ${tema ? `darkMode` : ''}`}>
 
             <div className={estilos.containerImgTexto}>
                 <Image src={Logo} alt="Imagem do logtipo" className={estilos.imgLogo}/>
