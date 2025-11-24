@@ -15,6 +15,13 @@ import REACT from "../../../public/icons8-react-144.png";
 import MYSQL from "../../../public/icons8-mysql-logo-144.png";
 
 export default function SecaoFormacao(){
+
+// Função para abir uma janela popup com o certificado
+function abrirJanela(url){
+    window.open(url, "Certificado", "popup=1");
+}
+
+
     return(
         <section id="secaoFormacao" className={estilos.containerSection}>
             <h2>Formação Acadêmica e Profissional</h2>
@@ -32,13 +39,14 @@ export default function SecaoFormacao(){
                 <p>Um programador back-end é o profissional responsável pela lógica, funcionalidade e infraestrutura que funciona nos bastidores de um site ou aplicação, ou seja, tudo o que o usuário não vê diretamente. <b>- Tecnologias JavaScript - Node.js - API's / Banco de Dados - MySQL - MariaDB.</b></p>
             </div>
             <h2>Tecnologias</h2>
+            <p>Clique em uma das imagens logo abaixo para saber meu grau de conhecimento na respectiva tecnologia:</p>
             <div className={estilos.containerImagens}>
 
-                <a href="https://www.devmedia.com.br/certificado/tecnologia/html/luiz-otavio-da-silva-castanheira" target="_blank" title="Clique para ver o certificado."><Image className={estilos.Imagem} src={HTML5} alt="Imagem logo Html 5." /></a>
-                <a href="https://www.devmedia.com.br/certificado/tecnologia/css/luiz-otavio-da-silva-castanheira" target="_blank" title="Clique para ver o certificado."><Image className={estilos.Imagem} src={CSS3} alt="Imagem logo Requisitos" /></a>
-                <a href="https://www.devmedia.com.br/certificado/tecnologia/javascript/luiz-otavio-da-silva-castanheira" target="_blank" title="Clique para ver o certificado." ><Image className={estilos.Imagem} src={JS} alt="Imagem logo Requisitos" /></a>
-                <a href="https://www.devmedia.com.br/certificado/tecnologia/react/luiz-otavio-da-silva-castanheira" target="_blank" title="Clique para ver o certificado."><Image className={estilos.Imagem} src={REACT} alt="Imagem logo Requisitos" /></a>
-                <a href="https://www.devmedia.com.br/certificado/tecnologia/mysql/luiz-otavio-da-silva-castanheira" target="_blank" title="Clique para ver o certificado"><Image className={estilos.Imagem} src={MYSQL} alt="Imagem logo Requisitos" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/html/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado."><Image className={estilos.Imagem} src={HTML5} alt="Imagem logo Html 5." /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/css/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado."><Image className={estilos.Imagem} src={CSS3} alt="Imagem logo Requisitos" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/javascript/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado." ><Image className={estilos.Imagem} src={JS} alt="Imagem logo Requisitos" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/react/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado."><Image className={estilos.Imagem} src={REACT} alt="Imagem logo Requisitos" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/mysql/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado"><Image className={estilos.Imagem} src={MYSQL} alt="Imagem logo Requisitos" /></a>
                 
             </div>
         </section>
