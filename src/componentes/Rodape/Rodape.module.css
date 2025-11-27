@@ -29,3 +29,14 @@
 .construido {
     border-top: solid 1px #feb633;
 }
+
+/* *************** Área de Responsividade ******************* */
+/* Smartphones menores */
+@media (max-width: 375px) {
+
+
+}
+/* Dispositivos móveis (smartphones) em modo retrato */
+@media (min-width: 376px) and (max-width: 768px) {
+
+}

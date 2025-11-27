@@ -1,9 +1,8 @@
 import Image from "next/image";
-import Link from "next/link";
 
 import estilos from "./SecaoFormacao.module.css";
 
-// Importando imagens
+// Importando imagens - albuma serão usadas em futura atualização do SPA
 import Algoritmo from "../../../public/alg.png";
 import Requisitos from "../../../public/levantamento.png";
 import Node from "../../../public/node.png";

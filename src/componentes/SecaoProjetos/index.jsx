@@ -1,10 +1,7 @@
-import Link from "next/link";
-import Image from "next/image";
-
 import estilos from "./SecaoProjetos.module.css";
 import CardProjetos from "../CardProjetos";
 
-// Importando Imagens
+// Importando Imagens - nem todas serão usadas neste momento, aguardam uma versão futura do SPA.
 import Padaria from "../../../public/sitePadaria320px.png";
 import Clinica from "../../../public/siteClinica300px.png";
 import Agencia from "../../../public/siteAgencia300px.png";

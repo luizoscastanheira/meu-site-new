@@ -50,5 +50,16 @@
     color: blue;
 }
 
+/* *************** Área de Responsividade ******************* */
+/* Smartphones menores */
+@media (max-width: 375px) {
+
+
+}
+/* Dispositivos móveis (smartphones) em modo retrato */
+@media (min-width: 376px) and (max-width: 768px) {
+
+}
+
 
 
