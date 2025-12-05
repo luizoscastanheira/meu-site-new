@@ -36,7 +36,7 @@ export default function SecaoProjetos(){
 
             <h2>Projetos Front/Back e API</h2>
             <div className={estilos.containerCards}>
-                <CardProjetos titulo={'Front-End Api Fatos Históricos'} imagem={FrontFatos} paragrafo={'Um site simples em HTML/CSS/JS que consome uma API - Fatos Históricos - Criada por mim.'} endereco={'https://frontapifatoshistoricos.netlify.app/'}/>
+                <CardProjetos titulo={'Front-End Api Fatos Históricos'} imagem={FrontFatos} paragrafo={'Um SPA feito em REact que consome uma API - Fatos Históricos - Criada por mim.'} endereco={'https://spafatoshistoricos.netlify.app/'}/>
                 <CardProjetos titulo={'Back-End API Fatos Históricos'} imagem={apiFatos} paragrafo={'Uma API simples feita JS/Node e hospedada no render.com'} endereco={'https://github.com/luizoscastanheira/apiFatosHistoricos'}/>
             </div>
 
