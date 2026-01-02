@@ -53,12 +53,38 @@
 /* *************** Área de Responsividade ******************* */
 /* Smartphones menores */
 @media (max-width: 375px) {
+.containerTopo {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+}
 
+.navTopo{
+    gap:10px;
+    margin: 10px;
+}
+
+.navLink{
+    font-size: 11px;
+}
 
 }
 /* Dispositivos móveis (smartphones) em modo retrato */
 @media (min-width: 376px) and (max-width: 768px) {
+.containerTopo {
+    height: auto;
+    padding: 15px;
+    flex-direction: column;
+}
 
+.navTopo{
+    gap:10px;
+    margin: 10px;
+}
+
+.navLink{
+    font-size: 11px;
+}
 }
 
 

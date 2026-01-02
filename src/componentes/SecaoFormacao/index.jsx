@@ -5,7 +5,7 @@ import estilos from "./SecaoFormacao.module.css";
 // Importando imagens - albuma serão usadas em futura atualização do SPA
 import Algoritmo from "../../../public/alg.png";
 import Requisitos from "../../../public/levantamento.png";
-import Node from "../../../public/node.png";
+import NODE from "../../../public/node.png";
 import rest from "../../../public/rest144.png";
 import HTML5 from "../../../public/icons8-html-logo-144.png";
 import CSS3 from "../../../public/icons8-css-logo-144.png";
@@ -42,10 +42,11 @@ function abrirJanela(url){
             <div className={estilos.containerImagens}>
 
                 <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/html/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado."><Image className={estilos.Imagem} src={HTML5} alt="Imagem logo Html 5." /></a>
-                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/css/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado."><Image className={estilos.Imagem} src={CSS3} alt="Imagem logo Requisitos" /></a>
-                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/javascript/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado." ><Image className={estilos.Imagem} src={JS} alt="Imagem logo Requisitos" /></a>
-                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/react/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado."><Image className={estilos.Imagem} src={REACT} alt="Imagem logo Requisitos" /></a>
-                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/mysql/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado"><Image className={estilos.Imagem} src={MYSQL} alt="Imagem logo Requisitos" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/css/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado."><Image className={estilos.Imagem} src={CSS3} alt="Imagem logo CSS" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/javascript/luiz-otavio-da-silva-castanheira")} title="Clique para ver o certificado." ><Image className={estilos.Imagem} src={JS} alt="Imagem logo JavaScript" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/react/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado."><Image className={estilos.Imagem} src={REACT} alt="Imagem logo REACT" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/node-js/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado."><Image className={estilos.Imagem} src={NODE} alt="Imagem logo Node.JS" /></a>
+                <a onClick={()=> abrirJanela("https://www.devmedia.com.br/certificado/tecnologia/mysql/luiz-otavio-da-silva-castanheira")}  title="Clique para ver o certificado"><Image className={estilos.Imagem} src={MYSQL} alt="Imagem logo MySQL" /></a>
                 
             </div>
         </section>
